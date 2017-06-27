@@ -1,3 +1,11 @@
+<?php
+require 'includes/common.php';
+if (isset($_SESSION['id']))
+{
+    header('Location: Cart.php');
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,34 +21,9 @@
         <title>Lifestyle</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        Lifestyle Store
-                    </a>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="Cart.html">
-                                Cart
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Settings.html">
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Logout.html">
-                                Logout
-                            </a>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php
+        include 'header.php';
+        ?>
         <div class="container cartfp">
             <table class="table table-striped table-bordered">
                 <tbody>
@@ -50,12 +33,8 @@
                 </tbody>
             </table>
         </div>
-        <footer>
-            <div class='container'>
-                <center>
-                    Copyright © Lifestyle Store. All Rights Reserved | Contact Us : +91 9000000000
-                </center>
-            </div>
-        </footer>
+        <?php
+        include 'footer.php';
+        ?>
     </body>
 </html>

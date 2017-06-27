@@ -1,6 +1,6 @@
 <?php
 
-include 'common.php';
+include 'includes/common.php';
 $email = mysqli_real_escape_string($_POST['email']);
 $password = mysqli_real_escape_string(md5(md5($_POST['password'])));
 

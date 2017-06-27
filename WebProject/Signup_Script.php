@@ -1,6 +1,6 @@
 <?php
 
-require 'common.php';
+require 'includes/common.php';
 $name = mysqli_real_escape_string($_POST['name']);
 $email = mysqli_real_escape_string($_POST['email']);
 $number = mysqli_real_escape_string($_POST['number']);

@@ -1,5 +1,5 @@
 <?php
-require 'common.php';
+require 'includes/common.php';
 if (isset($_SESSION['id']))
 {
     header('Location: Products.php');
@@ -21,7 +21,7 @@ if (isset($_SESSION['id']))
     </head>
     <body>
         <?php
-        include 'header.php';
+        include 'includes/header.php';
         ?>
     <center>
         <h1 class='signupstart'><b>SIGN UP</b></h1>
@@ -36,7 +36,7 @@ if (isset($_SESSION['id']))
         </form>
     </center>
     <?php
-    include 'footer.php';
+    include 'includes/footer.php';
     ?>
     </body>
 </html>

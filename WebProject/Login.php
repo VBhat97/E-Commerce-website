@@ -1,5 +1,5 @@
 <?php
-require 'common.php';
+require 'includes/common.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,29 +16,9 @@ require 'common.php';
         <title>Lifestyle</title>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        Lifestyle Store
-                    </a>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
-                            <a href="Login.php">
-                                Login
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Signup.php">
-                                Sign Up
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php
+        include 'includes/header.php';
+        ?>
         <div class='container panelstart'>
             <div class="row">
                 <div class="column-xs-6">
@@ -62,7 +42,7 @@ require 'common.php';
             </div>
         </div>
         <?php
-        include 'footer.php';
+        include 'includes/footer.php';
         ?>
     </body>
 </html>

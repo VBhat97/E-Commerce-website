@@ -1,5 +1,5 @@
 <?php
-require 'common.php';
+require 'includes/common.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,20 +17,20 @@ require 'common.php';
     </head>
     <body>
         <?php
-        include 'header.php' ;
+        include 'includes/header.php' ;
         ?>
         <div id="banner_image">
             <div class="container">
                 <div id="banner_content">
                     <p class='contentpara'>Shop at India's leading store and also avail special discounts!</p>
-                    <a class="btn btn-danger btn-lg active shopnow" href="Products.html">
+                    <a class="btn btn-danger btn-lg active shopnow" href="Products.php">
                         Shop Now
                     </a>
                 </div>
             </div>
         </div>
         <?php
-        include 'footer.php' ;
+        include 'includes/footer.php' ;
         ?>
     </body>
 </html>
