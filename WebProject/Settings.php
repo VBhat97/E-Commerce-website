@@ -1,3 +1,10 @@
+<?php
+require 'includes/common.php';
+if (!isset($_SESSION['email']))
+{
+    header('Location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,11 +50,11 @@
         </nav>
         <div class="container settingsfp">
             <center>
-                <form class="form-group settingsform">
+                <form class="form-group settingsform" action="Settings-script.php" method="post">
                 <h3><b>Change Password</b></h3>
-                <input type="text" placeholder="Old Password" class="form-control"><br>
-                <input type="text" placeholder="New Password" class="form-control"><br>
-                <input type="text" placeholder="Re-Type New Password" class="form-control"><br>
+                <input type="text" placeholder="Old Password" class="form-control" name="oldpass"><br>
+                <input type="text" placeholder="New Password" class="form-control" name="newpass"><br>
+                <input type="text" placeholder="Re-Type New Password" class="form-control" name="repass"><br>
                 <button class="btn btn-primary">Change</button>
                 </form>
             </center>
