@@ -1,25 +1,24 @@
 <?php
 
 require 'includes/common.php';
-$name = mysqli_real_escape_string($_POST['name']);
-$email = mysqli_real_escape_string($_POST['email']);
-$number = mysqli_real_escape_string($_POST['number']);
-$city = mysqli_real_escape_string($_POST['city']);
-$address = mysqli_real_escape_string($_POST['address']);
-$password = mysqli_real_escape_string(md5(md5($_POST['name'])));
+$name = $_POST['name'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$city =$_POST['city'];
+$address = $_POST['address'];
+$password = (md5(md5($_POST['password'])));
 
-$user_select_query = "SELECT * FROM users WHERE email = '$email";
+$user_select_query = "SELECT * FROM users WHERE email = '$email'";
 $user_query_result = mysqli_query($con, $user_select_query);
 
 if(mysqli_num_rows($user_query_result)>0)
 {
-    echo "User already exists";
-    header('Location: Singup.php');
+    header('Location: Signup.php');
 }
 
 else
 {
-    $user_select_query = "INSERT INTO (name, email, password, contact, city, address) VALUES ($name, $email, $password, $contact, $city, $address)";
+    $user_select_query = "INSERT INTO users (id, name, email, password, contact, city, address) VALUES (NULL, '$name', '$email', '$password', '$number', '$city', '$address')";
     $user_query_result = mysqli_query($con, $user_select_query);
     $_SESSION['id'] = mysqli_insert_id($con);
     header('Location: Products.php');

@@ -1,7 +1,6 @@
 <?php
 require 'includes/common.php';
 ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -69,7 +68,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=2" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -94,7 +93,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=3" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -119,7 +118,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=4" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -146,7 +145,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=5" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -171,7 +170,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=6" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -196,7 +195,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=7" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -221,7 +220,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=8" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -248,7 +247,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=9" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -273,7 +272,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=10" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -298,7 +297,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=11" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }
@@ -323,7 +322,7 @@ echo '<a href="#" class="btn btn-block btn-success" disabled>Added to
 cart</a>';
 } else {
 ?>
-<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block
+<a href="cart-add.php?id=12" name="add" value="add" class="btn btn-block
 btn-primary">Add to cart</a>
 <?php
 }

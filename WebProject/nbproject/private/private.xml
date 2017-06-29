@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/WebProject/Signup_Script.php</file>
-            <file>file:/C:/wamp64/www/WebProject/Signup.php</file>
-            <file>file:/C:/wamp64/www/WebProject/Login_Submit.php</file>
-            <file>file:/C:/wamp64/www/WebProject/includes/Check-if-added.php</file>
+            <file>file:/C:/wamp64/www/WebProject/includes/common.php</file>
+            <file>file:/C:/wamp64/www/WebProject/Products.php</file>
+            <file>file:/C:/wamp64/www/WebProject/index.php</file>
         </group>
     </open-files>
 </project-private>

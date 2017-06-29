@@ -1,9 +1,5 @@
 <?php
 require 'includes/common.php';
-if (isset($_SESSION['id']))
-{
-    header('Location: Products.php');
-}
 ?>
 <!DOCTYPE html>
 <html>
