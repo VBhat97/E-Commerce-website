@@ -23,24 +23,24 @@ if (!isset($_SESSION['email']))
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         Lifestyle Store
                     </a>
                 </div>
                 <div>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="Cart.html">
+                            <a href="Cart.php">
                                 Cart
                             </a>
                         </li>
                         <li>
-                            <a href="Settings.html">
+                            <a href="Settings.php">
                                 Settings
                             </a>
                         </li>
                         <li>
-                            <a href="Logout.html">
+                            <a href="Logout.php">
                                 Logout
                             </a>
                         </li> 
@@ -50,7 +50,7 @@ if (!isset($_SESSION['email']))
         </nav>
         <div class="container settingsfp">
             <center>
-                <form class="form-group settingsform" action="Settings-script.php" method="post">
+                <form class="form-group settingsform" action="Settings_script.php" method="post">
                 <h3><b>Change Password</b></h3>
                 <input type="text" placeholder="Old Password" class="form-control" name="oldpass"><br>
                 <input type="text" placeholder="New Password" class="form-control" name="newpass"><br>
