@@ -35,7 +35,7 @@ require 'includes/common.php';
                             </form>
                         </div>
                         <div class="panel-footer">
-                            Don't Have an account? Register
+                            Don't Have an account? <a href="Signup.php">Register</a>
                         </div>
                     </div>
                 </div>

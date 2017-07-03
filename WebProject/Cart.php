@@ -5,7 +5,7 @@ if (!isset($_SESSION['email'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 
@@ -21,6 +21,7 @@ if (!isset($_SESSION['email'])) {
     <body>
         <div class="container-fluid" id="content">
             <?php include 'includes/header.php'; ?>
+            <br><br><br><br><br><br>
             <div class="row decor_bg">
                 <div class="col-md-6 col-md-offset-3">
                     <table class="table table-striped">
@@ -40,16 +41,16 @@ if (!isset($_SESSION['email'])) {
                                     <th>Price</th>
                                     <th></th>
                                 </tr>
-                            </thead>
+                        </thead>
                             <tbody>
                                 <?php
                                 while ($row = mysqli_fetch_array($result)) {
                                     $sum+= $row["Price"];
-                                    $id .= $row["id"] . ", ";
+                                    $user_id .= $row["id"] . ", ";    
                                     echo "<tr><td>" . "#" . $row["id"] . "</td><td>" . $row["Name"] . "</td><td>Rs " . $row["Price"] . "</td><td><a href='cart-remove.php?id={$row['id']}' class='remove_item_link'> Remove</a></td></tr>";
                                 }
-                                $id = rtrim($id, ", ");
-                                echo "<tr><td></td><td>Total</td><td>Rs " . $sum . "</td><td><a href='success.php?itemsid=" . $id . "' class='btn btn-primary'>Confirm Order</a></td></tr>";
+                                $user_id = rtrim($user_id, ", ");
+                                echo "<tr><td></td><td>Total</td><td>Rs " . $sum . "</td><td><a href='success.php?itemsid=" . $user_id . "' class='btn btn-primary'>Confirm Order</a></td></tr>";
                                 ?>
                             </tbody>
                             <?php
